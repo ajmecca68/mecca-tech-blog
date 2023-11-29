@@ -1,0 +1,17 @@
+   <main>
+    <!-- Button to create a new post -->
+    <a href="/create-post" class="create-post-button">ADD A POST</a>
+
+    <!-- List of blog posts -->
+    <div class="post-list">
+      <h2>Recent Blog Posts</h2>
+      {{#each posts}}
+        <div class="post">
+          <h3>{{this.title}}</h3>
+          <p>{{this.content}}</p>
+          <p>Posted by: {{this.User.username}}</p>
+          <p>Date: {{formatDate this.createdAt}}</p>
+        </div>
+      {{/each}}
+    </div>
+  </main>

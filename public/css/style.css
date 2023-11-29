@@ -1,0 +1,71 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    height: 100px;
+    background: linear-gradient(to bottom, #3498db, #2980b9); /* Light to dark blue gradient background */
+    text-align: center;
+    color: #fff; /* Text color is white */
+}
+
+footer {
+    height: 100px;
+    background: linear-gradient(to bottom, #3498db, #2980b9); /* Light to dark blue gradient background */
+    text-align: center;
+    color: #fff; /* Text color is white */
+}
+
+/* Style the navigation links */
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000; /* Link color is black */
+    font-weight: bold;
+}
+
+/* Style the title */
+h1 {
+    font-family: 'Your Fun Font', Georgia, 'Times New Roman', Times, serif; /* Replace 'Your Fun Font' with an actual font name */
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Example CSS for styling the main page */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.create-post-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
