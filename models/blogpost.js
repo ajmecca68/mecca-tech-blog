@@ -1,7 +1,10 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('../sequelize'); 
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection'); // Adjust the path as necessary
 
-const Blogpost = sequelize.define('Blogpost', {
+class Blogpost extends Model {}
+
+Blogpost.init({
+  // Model attributes
   title: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -13,6 +16,10 @@ const Blogpost = sequelize.define('Blogpost', {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
   },
+}, {
+  sequelize,
+  modelName: 'Blogpost',
+  timestamps: false 
 });
 
 module.exports = Blogpost;

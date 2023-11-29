@@ -8,6 +8,10 @@ const currentYear = new Date().getFullYear();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const db = require('./models');
+db.sequelize.sync({ force: true }).then(() => {
+  console.log("Tables created");
+});
 
 // Set views directory to where your templates are
 app.set('views', path.join(__dirname, 'views'));
