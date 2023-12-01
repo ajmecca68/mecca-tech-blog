@@ -40,7 +40,7 @@ app.use(session({
 
 // Routes
 app.get('/', (req, res) => {
-    res.render('home', { pageTitle: 'MeccaTech Blog', currentYear  });
+    res.render('home', { pageTitle: 'MecTech Blog', currentYear  });
 });
 
 // Render the login page with dynamic data
